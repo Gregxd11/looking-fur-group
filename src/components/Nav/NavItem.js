@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const NavItem = props => {
-  const [ active, setActive ] = useState(false);
   return (
-    <a
-      onClick={() => setActive(!active)}
-      href={props.href}
-      className={active ? 'item active' : 'item'}
-    >
+    <a href={props.href} className="item">
       {props.content}
     </a>
   );
